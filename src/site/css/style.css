@@ -47,6 +47,7 @@
   /* Style the search field */
   .search-bar {
     margin-top: 2vh;
+    background-color: #ffffff;
   }
 
   #search-people {
@@ -96,7 +97,6 @@
 
 /* MAIN */
 .main-bar {
-  margin-top: 1vh;
   margin-bottom: 6vh;
 	padding: 20px;
 	background-color: rgb(237, 237,237);
@@ -153,10 +153,8 @@
   margin-bottom: 6vh;
 }
 
-.links-bar {
-  margin-bottom: 2vh;
-  padding: 30px;
-  background-color: rgb(237, 237,237);
+.links-bar-first, .links-bar-second {
+  background-color: #ffffff;
 }
 
 .fb-page .twitter-timeline {
@@ -184,6 +182,7 @@
 .this-week {
   padding: 10px;
   border: 1px solid #d8d8d8;
+  background-color: #ffffff;
 }
 
 .weather {
@@ -229,11 +228,12 @@
 .bus-number {
   display: inline-block;
   padding: 5px;
-  color: white;
-  background-color: #54585A;
+  background-color: #ffffff;
   border-radius: 5px;
   margin-right: 10px;
   margin-top: 10px;
+  border: 1px solid #d8d8d8;
+
 }
 
 .bus-time{
@@ -279,6 +279,10 @@
   margin-bottom: 30px;
 }
 
+.seminars-list {
+  background-color: #ffffff;
+}
+
 
 #news-text {
   display: inline-block;
@@ -299,4 +303,38 @@
 
 .event-calendar {
   max-width: 70%;
+}
+
+.vf-masthead__title {
+  margin-left: 30px;
+}
+
+.vf-navigation__item a {
+  font-size: 90%;
+}
+
+.wrapper {
+  background-color: rgb(237, 237,237);
+}
+
+.test-i {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #d8d8d8;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 1px;
+}
+
+.icon-test {
+  font-size: 25px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.icon-p {
+  font-size: 12px;
+  margin: 0px;
 }
