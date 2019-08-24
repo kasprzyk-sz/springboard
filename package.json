@@ -91,5 +91,12 @@
     "url": "https://github.com/visual-framework/vf-eleventy/issues"
   },
   "homepage": "https://github.com/visual-framework/vf-eleventy#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "@visual-framework/vf-button": "^1.0.0-beta.4",
+    "@visual-framework/vf-link-list": "^1.0.0-beta.4",
+    "@visual-framework/vf-list": "^1.0.0-beta.4",
+    "@visual-framework/vf-masthead": "^1.0.0-alpha.4",
+    "@visual-framework/vf-navigation": "^1.0.0-alpha.4"
+  }
 }
