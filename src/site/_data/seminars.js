@@ -25,7 +25,7 @@ module.exports = () => {
               'room': element.room[0],
               'firstname': element.firstname[0],
               'name': element.name[0]
-              
+
             }
 
             seminars.push(item);
@@ -42,7 +42,14 @@ module.exports = () => {
         });
       })
       .catch((error) => {
-        reject(error);
+
+        // return a stub so build can continue
+        resolve({
+          'url': url,
+          'items': []
+        });
+
+        console.log(error);
       });
   });
 };
