@@ -38,6 +38,12 @@ module.exports = async function() {
       // we've giot all the data now. So resolve the promise to return the data
       // we've giot all the data now. So resolve the promise to return the data
       resolve({ items: devtoListTrimmed.slice(0,1)  });
-    }); //end then
+    })
+    .catch((error) => {
+      // return a stub so build can continue
+      resolve({ items: []  });
+
+      console.log(error);
+    });
   }); //end promise
 };
