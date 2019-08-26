@@ -22,72 +22,66 @@ templateEngineOverride: njk
             </div>
   		  </div>
 <!-- MAIN BAR -->
-  <div class="vf-grid | vf-grid__col-2 | main-bar">
-            <div class="news-container">
-            	<h4 class="vf-section-header__heading">INsites</h4>
-              <div class="vf-grid news-box">
-{% for item in news.items %}
-  <div id="news-image">
-<img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
-  </div>
-  <div id="news-text" >
-<a href="{{ item.url }}"><h5>{{ item.title }}</h5></a>
-<p>{{item.description}}</p>
-<a href="#" class="vf-link vf-link--hover">Read all news >></a>
-  </div>
-{% endfor %}
-</div>
+<section class="vf-inlay vf-u-text-color--grey--dark | main-bar">
+                <main class="vf-inlay__content--main">
+                    <div class="vf-content">
+                      <div class="news-container">
+                        <h4 class="vf-section-header__heading">INsites</h4>
+                        <div class="vf-grid">
+            {% for item in news.items %}
+            <div id="news-image">
+            <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
             </div>
-            <div class="col">
-            	<h4 class="vf-section-header__heading">Services</h4>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              <a class="test-i" href="#">
-                <i class="si fa fa-bus icon-test"></i>
-                <p class="icon-p">Bus Shuttle</p></a>
-              {# <div class="services-icons">
-              	<button class="button vf-button vf-button--tertiary"><i class="fas fa-check"></i> Room booking</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="si fa fa-download"></i> Downloads</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="fas fa-utensils"></i> Canteen Menu</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="si fa fa-bus"></i> Bus Shuttle</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="fas fa-chart-line"></i> Training</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="fas fa-book"></i> Library</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="far fa-file-alt"></i> Regulations</button>
-              	<button class="button vf-button vf-button--tertiary"><i class="fas fa-euro-sign"></i> Salary</button>
-              </div> #}
+            <div id="news-text" >
+            <a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
+            <p>{{item.description}}</p>
+            <a href="#" class="vf-link vf-link--hover">Read all news >></a>
             </div>
-      </div>
+            {% endfor %}
+            </div>
+                      </div>
+                    </div>
+                </main>
+                <main class="vf-inlay__content--additional | services-container">
+                      <h4 class="vf-section-header__heading">Services</h4>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                      <a class="test-i" href="#">
+                        <i class="si fa fa-bus icon-test"></i>
+                        <p class="icon-p">Bus Shuttle</p></a>
+                </main>
+        </section>
 <!--SECONDARY BAR -->
 <div class="vf-grid | vf-grid__col-3 | secondary-bar">
       <div class="this-week">
@@ -148,15 +142,8 @@ templateEngineOverride: njk
            <a class="twitter-timeline" data-width="370" data-height="400" href="https://twitter.com/embl?ref_src=twsrc%5Etfw">Tweets by embl</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
          </div>
    </div>
-   <a class="test-i" href="#">
-   <i class="si fa fa-bus icon-test"></i>
-   <p class="icon-p">Bus Shuttle</p></a>
-   <a class="test-i" href="#">
-   <i class="si fa fa-bus icon-test"></i>
-   <p class="icon-p">Bus Shuttle</p></a>
-
 </div>
-
+    </div>
 
 <!--
 <div class="col sm-feeds">
@@ -178,3 +165,14 @@ templateEngineOverride: njk
 
   </form>
 </section> #}
+
+{# <div class="services-icons">
+  <button class="button vf-button vf-button--tertiary"><i class="fas fa-check"></i> Room booking</button>
+  <button class="button vf-button vf-button--tertiary"><i class="si fa fa-download"></i> Downloads</button>
+  <button class="button vf-button vf-button--tertiary"><i class="fas fa-utensils"></i> Canteen Menu</button>
+  <button class="button vf-button vf-button--tertiary"><i class="si fa fa-bus"></i> Bus Shuttle</button>
+  <button class="button vf-button vf-button--tertiary"><i class="fas fa-chart-line"></i> Training</button>
+  <button class="button vf-button vf-button--tertiary"><i class="fas fa-book"></i> Library</button>
+  <button class="button vf-button vf-button--tertiary"><i class="far fa-file-alt"></i> Regulations</button>
+  <button class="button vf-button vf-button--tertiary"><i class="fas fa-euro-sign"></i> Salary</button>
+</div> #}

@@ -1,3 +1,7 @@
+body {
+  background-color: #f3f3f3;
+}
+
 .embl-logo {
   display: inline-block;
   height: 50px;
@@ -99,23 +103,6 @@
 .main-bar {
   margin-bottom: 6vh;
 	padding: 20px;
-	background-color: rgb(237, 237,237);
-  border: solid 1px #d8d8d8;
-}
-
-.services-icons {
-	text-align: center;
-  padding: 10px;
-  background-color: #ffffff;
-  border: solid 1px #d8d8d8;
-}
-
-.services-icons i {
-	display: block;
-	text-align: center;
-	font-size: 15px;
-	padding: 10px;
-
 }
 
 @media (max-width: 768px) {
@@ -157,22 +144,9 @@
   background-color: #ffffff;
 }
 
-.fb-page .twitter-timeline {
-  width: 100%;
-  padding: 10px;
-}
-
-@media (max-width: 991px) {
-  .seminars {
-    font-size: 80%; } }
-
 .links-bar li{
   line-height: 18px;
 }
-
-@media (max-width: 991px) {
-  .vf-section-header__heading {
-    font-size: 26px; } }
 
 .seminars {
   padding: 10px;
@@ -192,38 +166,13 @@
 
 .vf-section-header__heading, .vf-links__heading{
   margin-bottom: 15px;
-  /*background-color: #54585A;
-  color: white;*/
   padding: 4px 0px 2px 8px;
   border-radius: 2px;
-}
-.button:hover {
-  ;
 }
 
 .vf-list__item {
   margin-left: 10px;
 }
-
-.cat:hover {
-  background-color: white;
-}
-
-.cat {
-  padding: 20px;
-}
-
-.sm-feeds {
-  text-align: center;
-  padding: 10px;
-
-}
-
-/* .sm-feeds:hover {
-  background-color: #ffffff;
-  border: solid 2px #009f4d;
-  color: #009f4d;
-} */
 
 .bus-number {
   display: inline-block;
@@ -246,21 +195,12 @@
 
 }
 
-.social-media {
-  /*background-color: rgb(237, 237,237); */
-}
-
-.shortcuts {
-  margin-top: 20px;
-}
 .links-bar-first {
   margin-bottom: 10px;
   border: solid 1px #d8d8d8;
-  /* background-color: rgb(237, 237,237); */
 }
 
 .links-bar-second {
-  /* background-color: rgb(237, 237,237); */
   margin-bottom: 10px;
   border: solid 1px #d8d8d8;
 }
@@ -313,10 +253,6 @@
   font-size: 90%;
 }
 
-.wrapper {
-  background-color: rgb(237, 237,237);
-}
-
 .test-i {
   width: 90px;
   height: 90px;
@@ -325,6 +261,7 @@
   border: 1px solid #d8d8d8;
   padding: 10px;
   background-color: #ffffff;
+  float: left;
   margin: 1px;
 }
 
@@ -336,5 +273,9 @@
 
 .icon-p {
   font-size: 12px;
+  margin: 0px;
+}
+
+#news-title {
   margin: 0px;
 }

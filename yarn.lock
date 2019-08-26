@@ -696,6 +696,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-heading/-/vf-heading-1.0.0-beta.4.tgz#47763861c632052c589df17684a268e82222def2"
   integrity sha512-cCNgbk2X2dMiXPol0EHeojJALfZ29uClFGViJSpgXAmc5er/A2TaFV6WxPIew4VSaX44ocijeL2fIXdqEb9d9Q==
 
+"@visual-framework/vf-inlay@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-inlay/-/vf-inlay-1.0.0-beta.4.tgz#b3f7c6e2b2af6ab3b6b01c82a7b941f8447da37c"
+  integrity sha512-z2u394NeHZbWH4J8FZJU/aqawrMCKtZBjpMQztdDSU2Cg8g6oPhtoyfhmptD+qbxd1z8gH97RGyBcVGyNg4NIw==
+
 "@visual-framework/vf-intro@^1.0.0-beta.4":
   version "1.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-intro/-/vf-intro-1.0.0-beta.4.tgz#64cf8876359b6727874a4b711e3d5e26d686b985"
