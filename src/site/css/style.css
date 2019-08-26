@@ -1,6 +1,4 @@
-body {
-  background-color: #f3f3f3;
-}
+
 
 .embl-logo {
   display: inline-block;
@@ -103,6 +101,7 @@ body {
 .main-bar {
   margin-bottom: 6vh;
 	padding: 20px;
+  border: solid 1px #d8d8d8;
 }
 
 @media (max-width: 768px) {
@@ -224,16 +223,6 @@ body {
 }
 
 
-#news-text {
-  display: inline-block;
-  margin-left: 30px;
-  font-size: 14px;
-}
-
-#news-image {
-  display: inline-block;
-}
-
 .news-box, .calendar-box {
   padding: 20px;
   border: 1px solid #d8d8d8;
@@ -278,4 +267,12 @@ body {
 
 #news-title {
   margin: 0px;
+}
+
+.embl-news {
+  border: solid 1px #d8d8d8;
+}
+
+#news-text p {
+  font-size: 14px;
 }

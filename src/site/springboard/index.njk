@@ -84,6 +84,9 @@ templateEngineOverride: njk
         </section>
 <!--SECONDARY BAR -->
 <div class="vf-grid | vf-grid__col-3 | secondary-bar">
+      <div class="embl-news">
+        <h4 class="vf-section-header__heading">EMBL News</h4>
+      </div>
       <div class="this-week">
         <h4 class="vf-section-header__heading">Upcoming Events</h4>
            <div data-tockify-component="mini" data-tockify-calendar="emblcalendar"></div>
@@ -143,8 +146,63 @@ templateEngineOverride: njk
          </div>
    </div>
 </div>
+    <section class="vf-grid | vf-grid__col-3">
+                          <div class="news-container">
+                            <h4 class="vf-section-header__heading">INsites</h4>
+    {% for item in news.items %}
+    <div id="news-image">
+    <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
     </div>
-
+    <div id="news-text" >
+    <a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
+    <p>{{item.description}}</p>
+    <a href="#" class="vf-link vf-link--hover">Read all news >></a>
+    </div>
+    {% endfor %}
+                          </div>
+                          <div>
+                            hh
+                          </div>
+                    <div class=" | services-container">
+                          <h4 class="vf-section-header__heading">Services</h4>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                          <a class="test-i" href="#">
+                            <i class="si fa fa-bus icon-test"></i>
+                            <p class="icon-p">Bus Shuttle</p></a>
+                    </div>
+            </section>
 <!--
 <div class="col sm-feeds">
   <i class="social-m fab fa-facebook-square"></i>

@@ -37,7 +37,7 @@ module.exports = async function() {
       const devtoListTrimmed = devtoList.filter(n => n != undefined);
       // we've giot all the data now. So resolve the promise to return the data
       // we've giot all the data now. So resolve the promise to return the data
-      resolve({ items: devtoListTrimmed.slice(0,1)  });
+      resolve({ items: devtoListTrimmed.slice(0,2)  });
     })
     .catch((error) => {
       // return a stub so build can continue
