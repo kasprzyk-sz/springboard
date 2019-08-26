@@ -28,16 +28,16 @@ templateEngineOverride: njk
                       <div class="news-container">
                         <h4 class="vf-section-header__heading">INsites</h4>
                         <div class="vf-grid">
-            {% for item in news.items %}
-            <div id="news-image">
-            <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
-            </div>
-            <div id="news-text" >
-            <a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
-            <p>{{item.description}}</p>
-            <a href="#" class="vf-link vf-link--hover">Read all news >></a>
-            </div>
-            {% endfor %}
+{% for item in news.items %}
+<div id="news-image">
+<img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
+</div>
+<div id="news-text" >
+<a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
+<p>{{item.description}}</p>
+<a href="#" class="vf-link vf-link--hover">Read all news >></a>
+</div>
+{% endfor %}
             </div>
                       </div>
                     </div>
