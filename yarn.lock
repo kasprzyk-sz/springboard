@@ -741,6 +741,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-1.0.0-alpha.4.tgz#1e49f73d5b4a9d7238ff73d9582f5c42b00bec28"
   integrity sha512-RC8pDnQKRj3DCu/IMKXg3j9smF2xRe76TXZ5GnYm7/J1C9tSCaLfxsx/+rpJ/qRG/VbKSKG8wFM580XIpiCyAA==
 
+"@visual-framework/vf-news-container@^1.0.0-alpha.4":
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-news-container/-/vf-news-container-1.0.0-alpha.4.tgz#0c60c5704e131fb30ea095b973ac4438111502c7"
+  integrity sha512-EHcV51HitoVWL1jHwPvVyOWnSbmiz7C3OuoJAUv++RFq//z8UuRaiF3C/pg/k5CL9Jd/oy5Iufa3XLHqCng+Uw==
+
 "@visual-framework/vf-no-js@1.0.0-rc.4":
   version "1.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.0-rc.4.tgz#29ddab3abbc489fa20bdee5d29fec233ee8c2aae"

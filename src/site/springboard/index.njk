@@ -22,27 +22,27 @@ templateEngineOverride: njk
             </div>
   		  </div>
 <!-- MAIN BAR -->
-<section class="vf-inlay vf-u-text-color--grey--dark | main-bar">
-                <main class="vf-inlay__content--main">
-                    <div class="vf-content">
+<section class="vf-grid | vf-grid__col-3 | main-bar">
                       <div class="news-container">
                         <h4 class="vf-section-header__heading">INsites</h4>
-                        <div class="vf-grid">
+                        <div class="vf-content | insites">
 {% for item in news.items %}
 <div id="news-image">
 <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
 </div>
-<div id="news-text" >
-<a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
-<p>{{item.description}}</p>
-<a href="#" class="vf-link vf-link--hover">Read all news >></a>
+<div>
+<a href="{{ item.url }}"><h5>{{ item.title }}</h5></a>
+<p class="crop vf-summary__text">{{item.description}}</p>
+</br>
 </div>
 {% endfor %}
+<a href="#" class="vf-link vf-link--hover">Read all news >></a>
             </div>
                       </div>
-                    </div>
-                </main>
-                <main class="vf-inlay__content--additional | services-container">
+                      <div>
+                        hh
+                      </div>
+                <main class="services-container">
                       <h4 class="vf-section-header__heading">Services</h4>
                       <a class="test-i" href="#">
                         <i class="si fa fa-bus icon-test"></i>
@@ -147,21 +147,24 @@ templateEngineOverride: njk
    </div>
 </div>
     <section class="vf-grid | vf-grid__col-3">
+                          <div>
+                            hh
+                          </div>
                           <div class="news-container">
                             <h4 class="vf-section-header__heading">INsites</h4>
     {% for item in news.items %}
     <div id="news-image">
     <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
     </div>
-    <div id="news-text" >
-    <a href="{{ item.url }}"><h5 id="news-title">{{ item.title }}</h5></a>
-    <p>{{item.description}}</p>
-    <a href="#" class="vf-link vf-link--hover">Read all news >></a>
+  </br>
+    <div class="news-text">
+    <a href="{{ item.url }}"><h5>{{ item.title }}</h5></a>
+    <p class="crop vf-summary__text">{{item.description}}</p>
     </div>
+  </br>
     {% endfor %}
-                          </div>
-                          <div>
-                            hh
+    <a href="#" class="vf-link vf-link--hover">Read all news >></a>
+
                           </div>
                     <div class=" | services-container">
                           <h4 class="vf-section-header__heading">Services</h4>

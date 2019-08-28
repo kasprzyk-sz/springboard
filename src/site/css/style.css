@@ -265,14 +265,10 @@
   margin: 0px;
 }
 
-#news-title {
-  margin: 0px;
-}
-
-.embl-news {
-  border: solid 1px #d8d8d8;
-}
-
-#news-text p {
-  font-size: 14px;
-}
+.crop {
+  overflow: hidden;
+  display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+  font-size: 16px;
+  }​
