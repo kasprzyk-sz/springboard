@@ -1,5 +1,4 @@
 
-
 .embl-logo {
   display: inline-block;
   height: 50px;
@@ -100,8 +99,10 @@
 /* MAIN */
 .main-bar {
   margin-bottom: 6vh;
-	padding: 20px;
-  border: solid 1px #d8d8d8;
+  margin-top: 40px;
+	/* padding: 20px 0px 20px 60px; */
+  background-color: white;
+  /* border: solid 1px #d8d8d8; */
 }
 
 @media (max-width: 768px) {
@@ -139,22 +140,18 @@
   margin-bottom: 6vh;
 }
 
-.links-bar-first, .links-bar-second {
-  background-color: #ffffff;
-}
-
 .links-bar li{
   line-height: 18px;
 }
 
 .seminars {
   padding: 10px;
-  border: 1px solid #d8d8d8;
+  /* border: 1px solid #d8d8d8; */
 }
 
-.this-week {
+.this-week, .menu-link {
   padding: 10px;
-  border: 1px solid #d8d8d8;
+  /* border: 1px solid #d8d8d8; */
   background-color: #ffffff;
 }
 
@@ -194,15 +191,7 @@
 
 }
 
-.links-bar-first {
-  margin-bottom: 10px;
-  border: solid 1px #d8d8d8;
-}
 
-.links-bar-second {
-  margin-bottom: 10px;
-  border: solid 1px #d8d8d8;
-}
 #seminars-embed {
   line-height: 1.5px;
 
@@ -215,7 +204,6 @@
 
 .seminar-speaker {
   font-size: 12px;
-  margin-bottom: 30px;
 }
 
 .seminars-list {
@@ -243,15 +231,15 @@
 }
 
 .test-i {
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   display: inline-block;
   border: 1px solid #d8d8d8;
   padding: 10px;
   background-color: #ffffff;
   float: left;
-  margin: 1px;
+  margin: 5px;
 }
 
 .icon-test {
@@ -268,7 +256,31 @@
 .crop {
   overflow: hidden;
   display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
-  font-size: 16px;
+  font-size: 14px;
   }​
+
+.news-text {
+  display: inline-block;
+}
+
+.news-image {
+  float: left;
+  margin-right: 15px;
+}
+
+.services-container {
+  padding: 0px 40px 10px 80px;
+  /* border-left: solid 1px #d8d8d8; */
+}
+
+.news-container {
+  padding: 0px 0px 10px 40px;
+
+}
+
+.article-date {
+  font-size: 12px;
+  margin-bottom: 4px;
+}

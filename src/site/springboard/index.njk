@@ -22,28 +22,28 @@ templateEngineOverride: njk
             </div>
   		  </div>
 <!-- MAIN BAR -->
-<section class="vf-grid | vf-grid__col-3 | main-bar">
+<section class="vf-grid | vf-grid__col-2 | main-bar">
                       <div class="news-container">
                         <h4 class="vf-section-header__heading">INsites</h4>
-                        <div class="vf-content | insites">
+                        <div class="insites">
 {% for item in news.items %}
-<div id="news-image">
+<div class="news-image">
 <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
 </div>
-<div>
-<a href="{{ item.url }}"><h5>{{ item.title }}</h5></a>
-<p class="crop vf-summary__text">{{item.description}}</p>
+<div class="news-text">
+  <p class="article-date">{{item.date}}</p>
+<a href="{{ item.url }}"><h5 class="article-title">{{ item.title }}</h5></a>
+<p class="crop">{{item.description}}</p>
 </br>
 </div>
+<hr class="vf-divider">
 {% endfor %}
-<a href="#" class="vf-link vf-link--hover">Read all news >></a>
+<a href="#" class="vf-link vf-link--hover | see-more">Read all news >></a>
             </div>
                       </div>
-                      <div>
-                        hh
-                      </div>
                 <main class="services-container">
-                      <h4 class="vf-section-header__heading">Services</h4>
+                  <h4 class="vf-section-header__heading">Quick links</h4>
+                  <div class="quick-links">
                       <a class="test-i" href="#">
                         <i class="si fa fa-bus icon-test"></i>
                         <p class="icon-p">Bus Shuttle</p></a>
@@ -80,13 +80,61 @@ templateEngineOverride: njk
                       <a class="test-i" href="#">
                         <i class="si fa fa-bus icon-test"></i>
                         <p class="icon-p">Bus Shuttle</p></a>
+                      </div>
                 </main>
         </section>
+        <hr class="vf-divider">
 <!--SECONDARY BAR -->
 <div class="vf-grid | vf-grid__col-3 | secondary-bar">
-      <div class="embl-news">
-        <h4 class="vf-section-header__heading">EMBL News</h4>
-      </div>
+  <div class="vf-links | menu-links">
+    <h4 class="vf-section-header__heading">Title</h4>
+      <ul class="vf-links__list | vf-list">
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          Research
+        </a>
+          </li>
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          Scientific Services
+        </a>
+          </li>
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          Alumni Relations
+        </a>
+          </li>
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          Science and Society
+        </a>
+          </li>
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          Leadership
+        </a>
+          </li>
+          <li class="vf-list__item">
+              <a class="vf-list__link" href="JavaScript:Void(0);">
+          International Relations
+        </a>
+          </li>  <li class="vf-list__item">
+                <a class="vf-list__link" href="JavaScript:Void(0);">
+            Ombuds Office
+          </a>
+            </li>
+            <li class="vf-list__item">
+                <a class="vf-list__link" href="JavaScript:Void(0);">
+            EMBL Archive
+          </a>
+            </li>
+            <li class="vf-list__item">
+                <a class="vf-list__link" href="JavaScript:Void(0);">
+            Staff Association
+          </a>
+            </li>
+      </ul>
+  </div>
       <div class="this-week">
         <h4 class="vf-section-header__heading">Upcoming Events</h4>
            <div data-tockify-component="mini" data-tockify-calendar="emblcalendar"></div>
@@ -101,9 +149,10 @@ templateEngineOverride: njk
 <p class="seminar-date">{{item.date}}, {{item.room}}</p>
 <h6 class="seminar-title">{{item.title}}</h6>
 <p class="seminar-speaker">{{item.firstname}} {{item.name}}</p>
+<hr class="vf-divider">
 {%endfor%}
 </div>
-           <a href="#" class="vf-link vf-link--hover">Seminars calendar >></a>
+           <a href="#" class="vf-link vf-link--hover | see-more">Seminars calendar >></a>
       </div>
       <div class="carousel">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -133,9 +182,10 @@ templateEngineOverride: njk
     </a>
   </div>
         </div>
-        <a href="#" class="vf-link vf-link--hover">Courses and Conferences >></a>
+        <a href="#" class="vf-link vf-link--hover | see-more">Courses and Conferences >></a>
     </div>
    </div>
+   <hr class="vf-divider">
    <!--POPULAR LINKS -->
 {% include "links.njk" %}
         <!-- SOCIAL MEDIA -->
@@ -146,66 +196,6 @@ templateEngineOverride: njk
          </div>
    </div>
 </div>
-    <section class="vf-grid | vf-grid__col-3">
-                          <div>
-                            hh
-                          </div>
-                          <div class="news-container">
-                            <h4 class="vf-section-header__heading">INsites</h4>
-    {% for item in news.items %}
-    <div id="news-image">
-    <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}" class="image-ov">
-    </div>
-  </br>
-    <div class="news-text">
-    <a href="{{ item.url }}"><h5>{{ item.title }}</h5></a>
-    <p class="crop vf-summary__text">{{item.description}}</p>
-    </div>
-  </br>
-    {% endfor %}
-    <a href="#" class="vf-link vf-link--hover">Read all news >></a>
-
-                          </div>
-                    <div class=" | services-container">
-                          <h4 class="vf-section-header__heading">Services</h4>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                          <a class="test-i" href="#">
-                            <i class="si fa fa-bus icon-test"></i>
-                            <p class="icon-p">Bus Shuttle</p></a>
-                    </div>
-            </section>
 <!--
 <div class="col sm-feeds">
   <i class="social-m fab fa-facebook-square"></i>
