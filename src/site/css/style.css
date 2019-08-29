@@ -52,16 +52,19 @@
   }
 
   #search-people {
-    text-align: center;
+    width: 85%;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   form.search-people {
-    width: 100%;
+    width: 40%;
     margin: 1em 0 0 0;
     text-align: right; }
 
   form.search input[type=text] {
-    padding: 3px;
+    padding: 8px;
     font-family: "IBM Plex Sans", sans-serif;
     color: #333333;
     border: 3px solid #cccccc;
@@ -71,10 +74,10 @@
   form.search button {
     width: 15%;
     margin-left: 1%;
-    padding: 3px;
+    padding: 6px;
     background: #3F3F3F;
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     border: 3px solid #3F3F3F;
     border-left: none;
     /* Prevent double borders */
