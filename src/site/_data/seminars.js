@@ -37,7 +37,7 @@ module.exports = () => {
 
           resolve({
             'url': url,
-            'items': seminars.slice(0,3) // get the first 3 only
+            'items': seminars.slice(0,5) // get the first 3 only
           });
         });
       })
