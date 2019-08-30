@@ -5,7 +5,6 @@
 }
 
 .sm-icons {
-  display: inline-block;
   float: right;
   padding: 3px;
 }
@@ -101,7 +100,7 @@
 
 /* MAIN */
 .main-bar {
-  margin-bottom: 6vh;
+  margin-bottom: 5vh;
   margin-top: 40px;
 	/* padding: 20px 0px 20px 60px; */
   background-color: white;
@@ -237,7 +236,6 @@
   width: 100px;
   height: 100px;
   text-align: center;
-  display: inline-block;
   border: 1px solid #d8d8d8;
   padding: 10px;
   background-color: #ffffff;
@@ -286,4 +284,7 @@
 .article-date {
   font-size: 12px;
   margin-bottom: 4px;
+}
+
+.test-class {
 }

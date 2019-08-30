@@ -1,0 +1,84 @@
+<section class="vf-grid | vf-grid__col-2 | main-bar">
+    <main class="news-container">
+      <h4 class="vf-section-header__heading">INsites</h4>
+      <div class="insites">
+        {% for item in news.items %}
+        <div class="news-image">
+          <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}"
+            class="image-ov">
+        </div>
+        <div class="news-text">
+          <p class="article-date">{{item.date}}</p>
+          <a href="{{ item.url }}">
+            <h5 class="article-title">{{ item.title }}</h5>
+          </a>
+          <p class="crop">{{item.description}}</p>
+          </br>
+        </div>
+        <hr class="vf-divider">
+        {% endfor %}
+        <a href="#" class="vf-link vf-link--hover | see-more">Read all news >></a>
+      </div>
+    </main>
+    <main class="services-container">
+      <div class="search">
+        <section id="search-people">
+          <form class="search" method="get" action="http://intranet.embl.de/search_result/index.php">
+            <input type="text" placeholder="Search" name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </section>
+      </div>
+      <section class="quick-links">
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+        <a class="test-i" href="#">
+          <i class="si fa fa-bus icon-test"></i>
+          <p class="icon-p">Bus Shuttle</p>
+        </a>
+      </section>
+    </main>
+  </section>
+  <hr class="vf-divider">
