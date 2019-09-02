@@ -3,6 +3,7 @@
       <h4 class="vf-section-header__heading">INsites</h4>
       <div class="insites">
         {% for item in news.items %}
+                <hr class="vf-divider">
         <div class="news-image">
           <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}"
             class="image-ov">
@@ -15,7 +16,6 @@
           <p class="crop">{{item.description}}</p>
           </br>
         </div>
-        <hr class="vf-divider">
         {% endfor %}
         <a href="#" class="vf-link vf-link--hover | see-more">Read all news >></a>
       </div>

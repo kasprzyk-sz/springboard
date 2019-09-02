@@ -761,6 +761,16 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-1.0.0-beta.4.tgz#bec7b047f25be60ff4ede9486895f50b472bcc0b"
   integrity sha512-e4fW5CzTuFLVRmrY2xo96MlH3Unpc0q3DPy3rHfV4MBCAdziidehdCHzmXILfWaKarrMV0q4Um/55noomv8nIQ==
 
+"@visual-framework/vf-section-header@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-section-header/-/vf-section-header-1.0.0-beta.4.tgz#48cbcddfe508a73c788da435e9a8d1d757ffbbb8"
+  integrity sha512-BHZ9xqL+bKRsX97B2RejUH37c7h7LXMo9Zzu7C6FtttOlYEo7Z4TPCoA282TDT7KP+so4KDxaBX/c38bQaOQAg==
+
+"@visual-framework/vf-summary@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-summary/-/vf-summary-1.0.0-beta.4.tgz#138c9d944d8ccc16a24e5bf834a1f806277d0e0e"
+  integrity sha512-3B+LnuW1/zqG9U9Pn8tOp9iuEIH99TTqbJSRtHuThuP2Il3U1RokvMm/LN2hW4Z1cjIRP5Z3Ruxy08hKgJnHQQ==
+
 "@visual-framework/vf-text@^1.0.0-beta.4":
   version "1.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-text/-/vf-text-1.0.0-beta.4.tgz#92f384e2551f7c8e659ddadfa0003d1e75543d6b"
