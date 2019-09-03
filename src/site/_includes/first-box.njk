@@ -5,15 +5,14 @@
         {% for item in news.items %}
                 <hr class="vf-divider">
         <div class="news-image">
-          <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}"
-            class="image-ov">
+          <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}">
         </div>
         <div class="news-text">
-          <p class="article-date">{{item.date}}</p>
-          <a href="{{ item.url }}">
-            <h5 class="article-title">{{ item.title }}</h5>
+          <p class="vf-summary__date">{{item.date}}</p>
+          <a href="{{ item.url }}" class="vf-summary__link">
+            <h5 class="vf-summary__title">{{ item.title }}</h5>
           </a>
-          <p class="crop">{{item.description}}</p>
+          <p class="crop vf-summary__text">{{item.description}}</p>
           </br>
         </div>
         {% endfor %}
