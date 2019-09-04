@@ -1,83 +1,83 @@
 <section class="vf-grid | vf-grid__col-2 | main-bar">
-    <main class="news-container">
-      <h4 class="vf-section-header__heading">INsites</h4>
-      <div class="insites">
-        {% for item in news.items %}
-                <hr class="vf-divider">
-        <div class="news-image">
-          <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}">
-        </div>
-        <div class="news-text">
-          <p class="vf-summary__date">{{item.date}}</p>
-          <a href="{{ item.url }}" class="vf-summary__link">
-            <h5 class="vf-summary__title">{{ item.title }}</h5>
-          </a>
-          <p class="crop vf-summary__text">{{item.description}}</p>
-          </br>
-        </div>
-        {% endfor %}
+  <div class="news-container">
+    <h4 class="vf-section-header__heading">INsites</h4>
+    <div class="insites">
+      {% for item in news.items %}
+      <hr class="vf-divider">
+      <div class="news-image">
+        <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}">
+      </div>
+      <div class="news-text">
+        <p class="vf-summary__date">{{item.date}}</p>
+        <a href="{{ item.url }}" class="vf-summary__link">
+          <h5 class="vf-summary__title">{{ item.title }}</h5>
+        </a>
+        <p class="crop vf-summary__text">{{item.description}}</p>
+        </br>
+      </div>
+      {% endfor %}
+      <div class="more-link">
         <a href="#" class="vf-link vf-link--hover | see-more">Read all news >></a>
       </div>
-    </main>
-    <main class="services-container">
-      <div class="search">
-        <section id="search-people">
-          <form class="search" method="get" action="http://intranet.embl.de/search_result/index.php">
-            <input type="text" placeholder="Search" name="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
-        </section>
+    </div>
+  </div>
+  <div class="services-container">
+      <div id="search-people">
+        <form class="search" method="get" action="http://intranet.embl.de/search_result/index.php">
+          <input type="text" placeholder="Search" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
       </div>
-      <section class="quick-links">
+      <div class="quick-links">
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-check icon-test"></i>
+          <p class="icon-p">Room Booking</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-utensils icon-test"></i>
+          <p class="icon-p">Canteen Menu</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-book icon-test"></i>
+          <p class="icon-p">Library</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="far fa-file-alt icon-test"></i>
+          <p class="icon-p">Rules and Regulations</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-euro-sign icon-test"></i>
+          <p class="icon-p">Salary Information</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-hospital icon-test"></i>
+          <p class="icon-p">Social Insurances</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="far fa-calendar-alt icon-test"></i>
+          <p class="icon-p">Internal Events</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-briefcase icon-test"></i>
+          <p class="icon-p">Job Opportunities</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-baby icon-test"></i>
+          <p class="icon-p">Kindergarten</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-plane-departure icon-test"></i>
+          <p class="icon-p">Leave Recording</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-tools icon-test"></i>
+          <p class="icon-p">Service Request</p>
         </a>
         <a class="test-i" href="#">
-          <i class="si fa fa-bus icon-test"></i>
-          <p class="icon-p">Bus Shuttle</p>
+          <i class="fas fa-laptop icon-test"></i>
+          <p class="icon-p">Admin Services</p>
         </a>
-      </section>
-    </main>
-  </section>
-  <hr class="vf-divider">
+     </div>
+  </div>
+</section>
+<hr class="vf-divider">

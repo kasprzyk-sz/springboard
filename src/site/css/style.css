@@ -51,6 +51,7 @@
   }
 
   #search-people {
+    display: block;
     width: 85%;
     margin-bottom: 30px;
     margin-left: auto;
@@ -93,8 +94,9 @@
 
 /*END OF SEARCH*/
 
-.bus-box {
+.timetable {
   text-align: center;
+  display: block;
   padding: 0px;
 }
 
@@ -158,6 +160,7 @@
 }
 
 .bus-number {
+  font-size: 14px;
   display: inline-block;
   padding: 5px;
   background-color: #ffffff;
@@ -175,16 +178,22 @@
   background-color: #009f4d;
   border-radius: 5px;
   margin-left: 5px;
-
 }
+
+.bus-icon {
+  font-size: 14px;
+}
+
 .vf-section-header__heading {
   margin-bottom: 20px;
 }
-.seminars-test {
-  padding: 0px 60px 0px 100px;
+.seminars {
+  /* padding: 0px 60px 0px 100px; */
+  margin-left: 50px;
 }
 
 #seminars-embed p {
+  font-size: 12px;
   margin-bottom: 0px;
 }
 
@@ -192,13 +201,8 @@
   margin-bottom: 3px;
 }
 
-.seminar-date {
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.seminar-speaker {
-  font-size: 12px;
+.downloads {
+  margin-left: 140px;
 }
 
 .this-week {
@@ -229,13 +233,19 @@
 }
 
 .icon-test {
-  font-size: 25px;
+  font-size: 30px;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
+}
+
+.bus-icon {
+  font-size: 18px;
+  padding: 10px;
+  margin-bottom: 3px;
 }
 
 .icon-p {
-  font-size: 12px;
+  font-size: 14px;
   margin: 0px;
 }
 
@@ -256,7 +266,7 @@
 }
 
 .services-container {
-  padding: 0px 40px 10px 60px;
+  padding: 0px 40px 0px 60px;
   /* border-left: solid 1px #d8d8d8; */
 }
 
@@ -265,6 +275,14 @@
 
 }
 
+.carousel {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.more-link {
+  text-align: right;
+}
 
 .test-class {
  padding-left: 40px;
@@ -272,4 +290,9 @@
 
 .third-container {
   margin-bottom: 40px;
+}
+
+.quick-links {
+  display: block;
+  height: auto;
 }
