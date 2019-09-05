@@ -1,5 +1,5 @@
 
-.embl-logo {
+.logo {
   display: inline-block;
   height: 50px;
 }
@@ -97,7 +97,11 @@
 .timetable {
   text-align: center;
   display: block;
-  padding: 0px;
+  padding: 10px 0px;
+}
+
+.timetable p {
+  margin: 0px;
 }
 
 /* MAIN */
@@ -233,6 +237,7 @@
 }
 
 .icon-test {
+  color: #3F3F3F;
   font-size: 30px;
   padding: 10px;
   margin-bottom: 3px;
@@ -296,3 +301,10 @@
   display: block;
   height: auto;
 }
+
+.vf-tabs__link {
+  padding: 3px;
+  font-size: 12px;
+
+}
+
