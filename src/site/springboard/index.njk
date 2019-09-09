@@ -15,9 +15,7 @@ templateEngineOverride: njk
         <div class="test-class">
               <h4 class="vf-section-header__heading">EMBL News</h4>
 <link rel="import" href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC" data-target="self" data-embl-js-content-hub-loader>
-</div>
-    <div class="weather">
-      <a class="weatherwidget-io" href="https://forecast7.com/en/49d408d67/heidelberg/" data-label_1="HEIDELBERG"
+  <a class="weatherwidget-io" href="https://forecast7.com/en/49d408d67/heidelberg/" data-label_1="HEIDELBERG"
         data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-days="3"
         data-theme="pure">HEIDELBERG WEATHER</a>
       <script>
@@ -31,48 +29,79 @@ templateEngineOverride: njk
           }
         }(document, 'script', 'weatherwidget-io-js');
       </script>
-      <h4 class="vf-section-header__heading">Downloads</h4>
+</div>
+      <div class="popular">
+      <h4 class="vf-section-header__heading">Popular links</h4>
       <div class="vf-tabs">
     <ul class="vf-tabs__list" data-vf-js-tabs>
         <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--1">Section</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--1">HR</a>
         </li>
         <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--2">A Short Section</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--2">Finances</a>
         </li>
         <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--3">A Rather Long Section</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--3">IT</a>
         </li>
         <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--4">Nested Tabs</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--4">Training</a>
         </li>
                 <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--4">Nested Tabs</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--5">Administration</a>
         </li>
                 <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--4">Nested Tabs</a>
+            <a class="vf-tabs__link" href="#vf-tabs__section--6">Scientific Svc</a>
+        </li>
+        <li class="vf-tabs__item">
+            <a class="vf-tabs__link" href="#vf-tabs__section--7">Templates</a>
         </li>
     </ul>
 </div>
-
 <div class="vf-tabs-content" data-vf-js-tabs-content>
     <section class="vf-tabs__section" id="vf-tabs__section--1">
-        <h2>Section 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod, tortor nec pharetra ultricies, ante erat imperdiet velit, nec laoreet enim lacus a velit. <a class="vf-link" href="#">Nam luctus</a>, enim in interdum condimentum, nisl diam
-            iaculis lorem, vel volutpat mi leo sit amet lectus. Praesent non odio bibendum magna bibendum accumsan.</p>
+        <h5>Human Resources</h5>
+        <div class="vf-grid">
+        <div>
+        <ul class="vf-links__list | vf-list">
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Leave recording</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Social insurances</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Salary information</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Training and development</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Timesheets</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Employment conditions</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Rules and regulations</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Internal policies</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Procedure forms</a></li>
+       </ul>
+       </div>
+       <div>
+       </div>
+       <ul class="vf-links__list | vf-list">
+         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link" href="#">Staff Rules and Regulations</a></li>
+         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link" href="#">Medical Invoice Submission (MIS) Form</a></li>
+         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link" href="#">Reimbursement Form</a></li>
+       </ul>  
+       </div>
     </section>
     <section class="vf-tabs__section" id="vf-tabs__section--2">
-        <h2>Section 2</h2>
-        <p>Nullam at diam nec arcu suscipit auctor non a erat. Sed et magna semper, eleifend magna non, facilisis nisl. Proin et est et lorem dictum finibus ut nec turpis. Aenean nisi tortor, euismod a mauris a, mattis scelerisque tortor. Sed dolor risus,
-            varius a nibh id, condimentum lacinia est. In lacinia cursus odio a aliquam. Curabitur tortor magna, laoreet ut rhoncus at, sodales consequat tellus.</p>
-    </section>
+        <h5>Finances</h5>
+        <ul class="vf-links__list | vf-list">
+         <li class="vf-list__item"><a class="vf-list__link" href="#">SAP</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Petty Cash</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Purchase</a></li>
+       </ul>   
+       </section>
     <section class="vf-tabs__section" id="vf-tabs__section--3">
-        <h2>Section 3</h2>
-        <p>Phasellus ac tristique orci. Nulla maximus <a class="vf-link" href="#">justo nec dignissim consequat</a>. Sed vehicula diam sit amet mi efficitur vehicula in in nisl. Aliquam erat volutpat. Suspendisse lorem turpis, accumsan consequat consectetur
-            gravida, <a class="vf-link" href="#">pellentesque ac ante</a>. Aliquam in commodo ligula, sit amet mollis neque. Vestibulum at facilisis massa.</p>
+        <h5>IT Services</h5>
+        <ul class="vf-links__list | vf-list">
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Room reservation</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Remote access</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Email</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Calendar</a></li>
+         <li class="vf-list__item"><a class="vf-list__link" href="#">Data storage</a></li>
+       </ul> 
     </section>
-  
-</div>
+    </div>
       {# <div class="vf-links vf-links--tight vf-links__list--s">
         <ul class="vf-links__list vf-links__list--secondary | vf-list">
           <li class="vf-list__item">
@@ -132,16 +161,116 @@ templateEngineOverride: njk
     </div>
     
   <hr class="vf-divider">
-  {% include "links.njk" %}
+
+  <div class="vf-grid vf-grid__col-4 vf-content">
+  <div>
+  <h3>
+  <a href="#">Administration</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Human Resources</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">IT Services</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+   <div>
+  <h3>
+  <a href="#">Strategy and Communication</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Grants Services</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Training</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Research</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+   <div>
+  <h3>
+  <a href="#">Alumni Relations</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Leadership</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Science and Society</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">International Relations</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+   <div>
+  <h3>
+  <a href="#">Finance and Purchase</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Health and Safety Office</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">Ombuds Office</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  <div>
+  <h3>
+  <a href="#">EMBL Archive</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+   <div>
+  <h3>
+  <a href="#">Staff Association</a>
+  </h3>
+  <p>Information for media including expert directory and photo gallery.</p>
+  </div>
+  </div>
+
+  {# {% include "links.njk" %} #}
   <!-- SOCIAL MEDIA -->
-  <div class="vf-grid | vf-grid__col-3 | social-media">
+  {# <div class="vf-grid | vf-grid__col-3 | social-media">
     <div class="sm-feeds">
       <!-- <i class="social-m fab fa-twitter-square"></i> -->
       <a class="twitter-timeline" data-width="370" data-height="400"
         href="https://twitter.com/embl?ref_src=twsrc%5Etfw">Tweets by embl</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-  </div>
+  </div> #}
 </div>
 
 

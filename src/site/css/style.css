@@ -153,7 +153,6 @@
 }
 
 .weather {
-  padding-right: 20px;
   padding-left: 20px;
 }
 
@@ -290,7 +289,8 @@
 }
 
 .test-class {
- padding-left: 40px;
+ padding-left: 10px;
+ padding-right: 40px;
 }
 
 .third-container {
@@ -303,8 +303,12 @@
 }
 
 .vf-tabs__link {
-  padding: 3px;
-  font-size: 12px;
+  padding: 5px;
+  font-size: 17px;
 
+}
+
+.vf-list__link {
+  font-size: 16px;
 }
 
