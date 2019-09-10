@@ -11,368 +11,218 @@ templateEngineOverride: njk
   {% include "first-box.njk" %}
   {% include "second-box.njk" %}
   <div class="third-container">
-  <div class="vf-grid | vf-grid__col-2">
-        <div class="test-class">
-              <h4 class="vf-section-header__heading">EMBL News</h4>
-<link rel="import" href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC" data-target="self" data-embl-js-content-hub-loader>
-  <a class="weatherwidget-io" href="https://forecast7.com/en/49d408d67/heidelberg/" data-label_1="HEIDELBERG"
-        data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-days="3"
-        data-theme="pure">HEIDELBERG WEATHER</a>
-      <script>
-        ! function (d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (!d.getElementById(id)) {
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://weatherwidget.io/js/widget.min.js';
-            fjs.parentNode.insertBefore(js, fjs);
-          }
-        }(document, 'script', 'weatherwidget-io-js');
-      </script>
-</div>
+    <div class="vf-grid | vf-grid__col-2">
+      <div class="test-class">
+        <h4 class="vf-section-header__heading">EMBL News</h4>
+        <link rel="import"
+          href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
+          data-target="self" data-embl-js-content-hub-loader>
+        <a class="weatherwidget-io" href="https://forecast7.com/en/49d408d67/heidelberg/" data-label_1="HEIDELBERG"
+          data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-days="3"
+          data-theme="pure">HEIDELBERG WEATHER</a>
+        <script>
+          ! function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (!d.getElementById(id)) {
+              js = d.createElement(s);
+              js.id = id;
+              js.src = 'https://weatherwidget.io/js/widget.min.js';
+              fjs.parentNode.insertBefore(js, fjs);
+            }
+          }(document, 'script', 'weatherwidget-io-js');
+        </script>
+      </div>
       <div class="popular">
-      <h4 class="vf-section-header__heading">Popular links</h4>
-      <div class="vf-tabs">
-    <ul class="vf-tabs__list" data-vf-js-tabs>
-        <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--1">HR</a>
-        </li>
-        <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--2">Finances</a>
-        </li>
-        <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--3">IT</a>
-        </li>
-        <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--4">Training</a>
-        </li>
-                <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--5">Administration</a>
-        </li>
-                <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--6">Scientific Svc</a>
-        </li>
-        <li class="vf-tabs__item">
-            <a class="vf-tabs__link" href="#vf-tabs__section--7">Templates</a>
-        </li>
-    </ul>
-</div>
-<div class="vf-tabs-content" data-vf-js-tabs-content>
-    <section class="vf-tabs__section" id="vf-tabs__section--1">
-        <h5>Human Resources</h5>
-        <div class="vf-grid">
-        <div>
-        <ul class="vf-links__list | vf-list">
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Leave recording</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Social insurances</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Salary information</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Training and development</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Timesheets</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Employment conditions</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Rules and regulations</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Internal policies</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Procedure forms</a></li>
-       </ul>
-       </div>
-       <div>
-       </div>
-       <ul class="vf-links__list | vf-list">
-         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list" href="#">Staff Rules and Regulations</a></li>
-         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list" href="#">Medical Invoice Submission (MIS) Form</a></li>
-         <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list" href="#">Reimbursement Form</a></li>
-       </ul>  
-       </div>
-    </section>
-    <section class="vf-tabs__section" id="vf-tabs__section--2">
-        <h5>Finances</h5>
-        <ul class="vf-links__list | vf-list">
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">SAP</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Petty Cash</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Purchase</a></li>
-       </ul>   
-       </section>
-    <section class="vf-tabs__section" id="vf-tabs__section--3">
-        <h5>IT Services</h5>
-        <ul class="vf-links__list | vf-list">
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Room reservation</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Remote access</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Email</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Calendar</a></li>
-         <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Data storage</a></li>
-       </ul> 
-    </section>
+        <h4 class="vf-section-header__heading">Popular links / downloads</h4>
+        <div class="vf-tabs">
+          <ul class="vf-tabs__list" data-vf-js-tabs>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--1">HR</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--2">Finances</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--3">IT</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--4">Training</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--5">Administration</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--6">Scientific Svc</a>
+            </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--7">Templates</a>
+            </li>
+          </ul>
+        </div>
+        <div class="vf-tabs-content" data-vf-js-tabs-content>
+          <section class="vf-tabs__section" id="vf-tabs__section--1">
+            <h5>Human Resources</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Leave recording</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Social insurances</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Salary information</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Training and development</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Timesheets</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Employment conditions</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Rules and regulations</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Internal policies</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Procedure forms</a></li>
+                </ul>
+              </div>
+              <div>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--2">
+            <h5>Finances</h5>
+            <ul class="vf-links__list | vf-list">
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">SAP</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Petty Cash</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Purchase</a></li>
+            </ul>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--3">
+            <h5>IT Services</h5>
+            <ul class="vf-links__list | vf-list">
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Room reservation</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Remote access</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Email</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Calendar</a></li>
+              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Data storage</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </div>
-      {# <div class="vf-links vf-links--tight vf-links__list--s">
-        <ul class="vf-links__list vf-links__list--secondary | vf-list">
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Staff Rules and Regulations
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Medical Invoice Submission (MIS) Form
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              PowerPoint Templates
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Training Registration Form
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Professional Development and Training Broschure
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Health Insurance Brochure
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Reimbursement Form
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              EMBL logo
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Leave Request Form
-            </a>
-          </li>
-          <li class="vf-list__item">
-            <a class="vf-list__link" href="">
-              Organigramme
-            </a>
-          </li>
-        </ul>
-        </div> #}
-    </div>
-    </div>
-    </div>
-    
+  </div>
   <hr class="vf-divider">
-
-  <div class="vf-grid vf-grid__col-3">
-  <div class="vf-links link-col">
-    <ul class="vf-links__list | vf-list">
+  <div class="vf-grid vf-grid__col-4 menu-links">
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Administration
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Administration
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Finance and Purchase
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Finance and Purchase
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Grants Services
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Grants Services
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Healt and Safety Office
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Health and Safety Office
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Human Resources
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Human Resources
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        IT Services
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            IT Services
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Leadership
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Leadership
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Strategy and Communications
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Strategy and Communications
+          </a>
         </li>
-    </ul>
-</div>
-<div class="vf-links link-col">
-    <ul class="vf-links__list | vf-list">
+      </ul>
+    </div>
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Research
-      </a>
-        </li>
-        <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Scientific Services
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Research
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Training
-      </a>
-        </li>
-    </ul>
-</div>
-<div class="vf-links link-col">
-    <ul class="vf-links__list | vf-list">
-        <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Alumni Relations
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Scientific Services
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        EMBL Archive
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Training
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Alumni Relations
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        International Relations
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            EMBL Archive
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Ombuds Office
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            International Relations
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Resource Development
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Ombuds Office
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Science and Society
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Resource Development
+          </a>
         </li>
         <li class="vf-list__item">
-            <a class="vf-list__link" href="JavaScript:Void(0);">
-        Staff Association
-      </a>
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Science and Society
+          </a>
         </li>
-    </ul>
-</div>
-  {# <div>
-  <h3>
-  <a href="#">Administration</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Human Resources</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">IT Services</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-   <div>
-  <h3>
-  <a href="#">Strategy and Communication</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Grants Services</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Training</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Research</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-   <div>
-  <h3>
-  <a href="#">Alumni Relations</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Leadership</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Science and Society</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">International Relations</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-   <div>
-  <h3>
-  <a href="#">Finance and Purchase</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Health and Safety Office</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">Ombuds Office</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-  <div>
-  <h3>
-  <a href="#">EMBL Archive</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div>
-   <div>
-  <h3>
-  <a href="#">Staff Association</a>
-  </h3>
-  <p>Information for media including expert directory and photo gallery.</p>
-  </div> #}
-  </div>
-
-  {# {% include "links.njk" %} #}
-  <!-- SOCIAL MEDIA -->
-  {# <div class="vf-grid | vf-grid__col-3 | social-media">
-    <div class="sm-feeds">
-      <!-- <i class="social-m fab fa-twitter-square"></i> -->
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Staff Association
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="twitter">
       <a class="twitter-timeline" data-width="370" data-height="400"
         href="https://twitter.com/embl?ref_src=twsrc%5Etfw">Tweets by embl</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-  </div> #}
+  </div>
 </div>
 
 
@@ -401,15 +251,3 @@ templateEngineOverride: njk
 
   </form>
 </section> #}
-
-{# <div class="services-icons">
-  <button class="button vf-button vf-button--tertiary"><i class="fas fa-check"></i> Room booking</button>
-  <button class="button vf-button vf-button--tertiary"><i class="si fa fa-download"></i> Downloads</button>
-  <button class="button vf-button vf-button--tertiary"><i class="fas fa-utensils"></i> Canteen Menu</button>
-  <button class="button vf-button vf-button--tertiary"><i class="si fa fa-bus"></i> Bus Shuttle</button>
-  <button class="button vf-button vf-button--tertiary"><i class="fas fa-chart-line"></i> Training</button>
-  <button class="button vf-button vf-button--tertiary"><i class="fas fa-book"></i> Library</button>
-  <button class="button vf-button vf-button--tertiary"><i class="far fa-file-alt"></i> Regulations</button>
-  <button class="button vf-button vf-button--tertiary"><i class="fas fa-euro-sign"></i> Salary</button>
-</div> #}
-
