@@ -516,6 +516,11 @@
     "@types/events" "*"
     "@types/node" "*"
 
+"@visual-framework/embl-content-hub-loader@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/embl-content-hub-loader/-/embl-content-hub-loader-1.0.0-beta.4.tgz#b4ed4865b4e8abae231ef56e1a41f3fc8e0832d5"
+  integrity sha512-khMWIaSaIZCahtGFZXdAoJb0EgEb4Nn4zvc+UKLjUinH33NMslnSptA6+RhiyTrjzRo5sZSlgXPqthoINgIkqw==
+
 "@visual-framework/embl-grid@^1.0.0-alpha.4":
   version "1.0.0-alpha.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/embl-grid/-/embl-grid-1.0.0-alpha.4.tgz#f08429c068eafbaa531472039d79d5d5e46844f6"
@@ -741,6 +746,11 @@
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-navigation/-/vf-navigation-1.0.0-alpha.4.tgz#1e49f73d5b4a9d7238ff73d9582f5c42b00bec28"
   integrity sha512-RC8pDnQKRj3DCu/IMKXg3j9smF2xRe76TXZ5GnYm7/J1C9tSCaLfxsx/+rpJ/qRG/VbKSKG8wFM580XIpiCyAA==
 
+"@visual-framework/vf-news-container@^1.0.0-alpha.4":
+  version "1.0.0-alpha.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-news-container/-/vf-news-container-1.0.0-alpha.4.tgz#0c60c5704e131fb30ea095b973ac4438111502c7"
+  integrity sha512-EHcV51HitoVWL1jHwPvVyOWnSbmiz7C3OuoJAUv++RFq//z8UuRaiF3C/pg/k5CL9Jd/oy5Iufa3XLHqCng+Uw==
+
 "@visual-framework/vf-no-js@1.0.0-rc.4":
   version "1.0.0-rc.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-no-js/-/vf-no-js-1.0.0-rc.4.tgz#29ddab3abbc489fa20bdee5d29fec233ee8c2aae"
@@ -750,6 +760,16 @@
   version "1.0.0-beta.4"
   resolved "https://registry.yarnpkg.com/@visual-framework/vf-sass-config/-/vf-sass-config-1.0.0-beta.4.tgz#bec7b047f25be60ff4ede9486895f50b472bcc0b"
   integrity sha512-e4fW5CzTuFLVRmrY2xo96MlH3Unpc0q3DPy3rHfV4MBCAdziidehdCHzmXILfWaKarrMV0q4Um/55noomv8nIQ==
+
+"@visual-framework/vf-section-header@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-section-header/-/vf-section-header-1.0.0-beta.4.tgz#48cbcddfe508a73c788da435e9a8d1d757ffbbb8"
+  integrity sha512-BHZ9xqL+bKRsX97B2RejUH37c7h7LXMo9Zzu7C6FtttOlYEo7Z4TPCoA282TDT7KP+so4KDxaBX/c38bQaOQAg==
+
+"@visual-framework/vf-summary@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@visual-framework/vf-summary/-/vf-summary-1.0.0-beta.4.tgz#138c9d944d8ccc16a24e5bf834a1f806277d0e0e"
+  integrity sha512-3B+LnuW1/zqG9U9Pn8tOp9iuEIH99TTqbJSRtHuThuP2Il3U1RokvMm/LN2hW4Z1cjIRP5Z3Ruxy08hKgJnHQQ==
 
 "@visual-framework/vf-text@^1.0.0-beta.4":
   version "1.0.0-beta.4"
