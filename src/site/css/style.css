@@ -169,8 +169,6 @@ form.search::after {
   padding-left: 20px;
 }
 
-
-
 .vf-list__item {
   margin-left: 10px;
 }
@@ -320,8 +318,8 @@ form.search::after {
 }
 
 .vf-tabs__link {
-  padding: 5px;
-  font-size: 17px;
+  padding: 3px;
+  font-size: 15px;
 
 }
 
@@ -346,9 +344,9 @@ form.search::after {
   margin-top: 20px;
 }
 
-.vf-list i {
+/* .vf-list i {
   color: #d80007;
-}
+} */
 
 .events img {
   float: left;  
@@ -365,4 +363,8 @@ form.search::after {
 .events p {
   margin: 0px;
   font-size: 12px;
+}
+
+.fa-bus {
+  margin-top: 20px;
 }

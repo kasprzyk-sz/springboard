@@ -6,8 +6,6 @@ templateEngineOverride: njk
 ---
 {% include "header.njk" %}
 <div class="wrapper">
-  <!-- BUS -->
-
   {% include "first-box.njk" %}
   {% include "second-box.njk" %}
   <div class="third-container">
@@ -37,49 +35,51 @@ templateEngineOverride: njk
         <div class="vf-tabs">
           <ul class="vf-tabs__list" data-vf-js-tabs>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--1">HR</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--1">Administration</a>
             </li>
             <li class="vf-tabs__item">
               <a class="vf-tabs__link" href="#vf-tabs__section--2">Finances</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--3">IT</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--3">HR</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--4">Training</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--4">IT</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--5">Administration</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--5">Leadership</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--6">Scientific Svc</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--6">Sci Services</a>
             </li>
             <li class="vf-tabs__item">
-              <a class="vf-tabs__link" href="#vf-tabs__section--7">Templates</a>
+              <a class="vf-tabs__link" href="#vf-tabs__section--7">Training</a>
             </li>
+            <li class="vf-tabs__item">
+              <a class="vf-tabs__link" href="#vf-tabs__section--8">Templates</a>
+            </li>
+
           </ul>
         </div>
         <div class="vf-tabs-content" data-vf-js-tabs-content>
           <section class="vf-tabs__section" id="vf-tabs__section--1">
-            <h5>Human Resources</h5>
+            <h5>Administration</h5>
             <div class="vf-grid">
               <div>
                 <ul class="vf-links__list | vf-list">
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Leave recording</a></li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Social insurances</a></li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Salary information</a></li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Training and development</a>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Canteen/Cafeteria</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Catering</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Facility Management</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Housing Service</a>
                   </li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Timesheets</a></li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Employment conditions</a>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">ISG Guesthouse</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Kindergarten</a>
                   </li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Rules and regulations</a>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Legal Services</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Service Request</a>
                   </li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Internal policies</a></li>
-                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Procedure forms</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Shuttle Bus</a></li>
                 </ul>
-              </div>
-              <div>
               </div>
               <ul class="vf-links__list | vf-list">
                 <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
@@ -92,22 +92,164 @@ templateEngineOverride: njk
             </div>
           </section>
           <section class="vf-tabs__section" id="vf-tabs__section--2">
-            <h5>Finances</h5>
-            <ul class="vf-links__list | vf-list">
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">SAP</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Petty Cash</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Purchase</a></li>
-            </ul>
+            <h5>Finance and Purchase</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">SAP</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Petty cash</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Purchase</a></li>
+                </ul>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
           </section>
           <section class="vf-tabs__section" id="vf-tabs__section--3">
+            <h5>Human Resources</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Employment conditions</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Infopacks</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Salary information</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Intermedex</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Internal Policies</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Leave recording</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Procedures and forms</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Professional Development and
+                      Training</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Rules and Regulations</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Salary Information</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Social Insurances</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Staff information</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Timesheets</a></li>
+                </ul>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--4">
             <h5>IT Services</h5>
-            <ul class="vf-links__list | vf-list">
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Room reservation</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Remote access</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Email</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Calendar</a></li>
-              <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Data storage</a></li>
-            </ul>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Calendar</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Data Storage</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Email</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Remote Access</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Room reservation</a></li>
+                </ul>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--5">
+            
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--6">
+            <h5>Scientific Services</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">ALMF Booking</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Core facilities</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Library</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Photolab</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">SIM Service Request</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Workshops</a></li>
+                </ul>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--7">
+            <h5>Training</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Career Development
+                      Support</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Complementary Scientific
+                      Skills</a></li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">Courses and Conferences</a>
+                  </li>
+                  <li class="vf-list__item"><a class="vf-list__link popular-list" href="#">EIPP</a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="vf-links__list | vf-list">
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Staff Rules and Regulations</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Medical Invoice Submission (MIS) Form</a></li>
+                <li class="vf-list__item"><i class="far fa-file-pdf"></i>&nbsp;<a class="vf-list__link popular-list"
+                    href="#">Reimbursement Form</a></li>
+              </ul>
+            </div>
+          </section>
+          <section class="vf-tabs__section" id="vf-tabs__section--8">
+            <h5>Templates</h5>
+            <div class="vf-grid">
+              <div>
+                <ul class="vf-links__list | vf-list">
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Colours</a></li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Logo</a></li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Typeface</a></li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Stationery templates</a>
+                  </li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">PowerPoint templates</a></li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Internal poster templates</a>
+                  </li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Scientific poster templates</a>
+                  </li>
+                  <li class="vf-list__item"><i class="fas fa-external-link-alt">&nbsp;</i><a
+                      class="vf-list__link popular-list" href="#">Business cards</a></li>
+                </ul>
+              </div>
+            </div>
+              <div>
           </section>
         </div>
       </div>
