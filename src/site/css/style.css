@@ -209,7 +209,6 @@ form.search::after {
 }
 
 #seminars-embed p {
-  font-size: 12px;
   margin-bottom: 0px;
 }
 
@@ -221,9 +220,9 @@ form.search::after {
   margin-left: 140px;
 }
 
-/* .this-week {
-  padding: 0px 40px 0px 20px;
-} */
+.this-week {
+  min-width: 500px;
+}
 
 .event-calendar {
   max-width: 70%;
@@ -281,21 +280,17 @@ form.search::after {
   float: left;
   margin-right: 15px;
 }
-
+ 
 .services-container {
-  padding: 0px 40px 0px 60px;
+  padding: 0px 40px 0px 100px;
   /* border-left: solid 1px #d8d8d8; */
 }
 
-.news-container {
+/* .news-container {
   padding: 0px 0px 10px 40px;
 
-}
+} */ 
 
-.carousel {
-  margin-top: 10px;
-  padding: 5px;
-}
 
 .more-link {
   text-align: right;
@@ -304,7 +299,7 @@ form.search::after {
 .test-class {
   padding-left: 10px;
   padding-right: 40px;
-  border-right: 1px solid #d8d8d8;
+  /* border-right: 1px solid #d8d8d8; */
 }
 
 .third-container {
@@ -318,9 +313,13 @@ form.search::after {
 }
 
 .vf-tabs__link {
-  padding: 3px;
-  font-size: 15px;
+  padding: 4px;
+  font-size: 16px;
 
+}
+
+.popular {
+  margin-left: 40px;
 }
 
 .popular-list {
