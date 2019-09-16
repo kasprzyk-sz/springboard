@@ -8,9 +8,9 @@
       </div>
       <div class="news-text">
         <p class="vf-summary__date">{{item.date}}</p>
-        <a href="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.url }}" class="vf-summary__link">
-          <h5 class="vf-summary__title">{{ item.title }}</h5>
-        </a>
+        <h3 class="vf-summary__title">
+        <a href="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.url }}" class="vf-summary__link insites-link">{{ item.title }}</a>
+        </h3>
         <p class="crop vf-summary__text">{{item.description}}</p>
         </br>
       </div>
@@ -28,7 +28,7 @@
       </form>
     </div>
     <div class="quick-links">
-      <a class="test-i" href="#">
+      <a class="test-i vf-link" href="#">
         <i class="fas fa-laptop icon-test"></i>
         <p class="icon-p">Admin Services</p>
       </a>
