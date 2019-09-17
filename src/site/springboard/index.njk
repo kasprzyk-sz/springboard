@@ -6,35 +6,17 @@ templateEngineOverride: njk
 ---
 {% include "header.njk" %}
 <div class="wrapper">
-  {% include "first-box.njk" %}
+  {% include "first-container.njk" %}
   {% include "second-container.njk" %}
   <hr class="vf-divider">
-  {# {% include "second-box.njk" %} #}
-  <div class="third-container">
-    <div class="vf-grid">
-      <div class="test-class">
-        <h4 class="vf-section-header__heading">EMBL News</h4>
-        <link rel="import"
-          href="https://dev.content.embl.org/api/v1/pattern.html?filter-content-type=article&filter-field-value%5Bfield_article_type%5D=article_timely&filter-fields-exists=field_display_title%2Cfield_teaser%2Cfield_canonical_location&limit=2&pattern=vf-news-item-default&sort-field-value%5Bcreated%5D=DESC"
-          data-target="self" data-embl-js-content-hub-loader>
-      </div>
-      <div class="seminars">
-      <h4 class="vf-section-header__heading">Seminars</h4>
-      <div id="seminars-embed">
-        {%for item in seminars.items%}
-        <p class="vf-summary__date">{{item.date}} - {{item.room}}</p>
-        <p class="vf-summary__date"></p>
-        <p class="vf-summary__text">{{item.title}}</p>
-        <p class="vf-summary__date">{{item.firstname}} {{item.name}}</p>
-        <hr>
-        {%endfor%}
-      </div>
-      <div class="more-link">
-        <a href="#" class="vf-link vf-link--hover">Seminars calendar >></a>
-      </div>
-    </div>
-    </div>
+  <div class="this-week">
+    <h4 class="vf-section-header__heading">This week at EMBL</h4>
+    <div data-tockify-component="calendar" data-tockify-calendar="emblcalendar"></div>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js">
+    </script>
   </div>
+  <hr class="vf-divider">
+  {% include "third-container.njk" %}
   <hr class="vf-divider">
   <div class="vf-grid menu-links">
     <div class="vf-links link-col">
@@ -139,82 +121,10 @@ templateEngineOverride: njk
         </li>
       </ul>
     </div>
-          <div class="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="../images/TBP19-01_290x144.jpg" alt="First slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="../images/TRC19-01_290x144.jpg" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-              <img class="d-block w-100" src="../images/VZB19-01_290x144.jpg" alt="Third slide">
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-              <div class="more-link">
-        <a href="#" class="vf-link vf-link--hover | see-more">Courses and Conferences >></a>
-      </div>
-      </div>
-
-    {# <div class="twitter">
+    <div class="twitter">
       <a class="twitter-timeline" data-width="370" data-height="400"
-        href="https://twitter.com/embl?ref_src=twsrc%5Etfw">Tweets by embl</a>
+        href="https://twitter.com/embl?ref_src=twsrc%5Etfw" data-tweet-limit="1">Tweets by embl</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div> #}
+    </div>
   </div>
 </div>
-
-
-
-
-
-<!--
-<div class="col sm-feeds">
-  <i class="social-m fab fa-facebook-square"></i>
-  <div class="fb-page" data-href="https://www.facebook.com/embl.org/" data-tabs="timeline" data-width="370" data-height="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/embl.org/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/embl.org/">European Molecular Biology Laboratory - EMBL</a></blockquote></div>
-</div>
-<div class="col sm-feeds">
-  <i class="social-m fab fa-instagram"></i>
- <a href="https://instawidget.net/v/user/embl_org" id="link-5c9824a1c41da9e7b9bbb3b9f52aa619ca5ef4d8e5d71f2a0b31a0489f33cd52">@embl_org</a>
- <script src="https://instawidget.net/js/instawidget.js?u=5c9824a1c41da9e7b9bbb3b9f52aa619ca5ef4d8e5d71f2a0b31a0489f33cd52&width=370px"></script>
-</div>
--->
-
-{# <section id="seadrch-people">
-  <form class="search" method="get" action="http://intranet.embl.de/search_result/index.php">
-      <input type="text" placeholder="Search for people" name="search">
-      <button type="submit"><i class="fa fa-search"></i></button>
-
-
-  </form>
-</section> #}
-
-        {# <a class="weatherwidget-io" href="https://forecast7.com/en/49d408d67/heidelberg/" data-label_1="HEIDELBERG"
-          data-label_2="WEATHER" data-font="Arial" data-icons="Climacons Animated" data-days="3"
-          data-theme="pure">HEIDELBERG WEATHER</a>
-        <script>
-          ! function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (!d.getElementById(id)) {
-              js = d.createElement(s);
-              js.id = id;
-              js.src = 'https://weatherwidget.io/js/widget.min.js';
-              fjs.parentNode.insertBefore(js, fjs);
-            }
-          }(document, 'script', 'weatherwidget-io-js');
-        </script> #}
