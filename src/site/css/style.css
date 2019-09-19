@@ -13,14 +13,15 @@
 .sm-icons i {
   padding: 2px;
   font-size: 36px;
+  color: #54585A;
 }
 
-.sm-icons i:hover {
+/* .sm-icons i:hover {
   color: #009f4d;
-}
+} */
 
 .brand-bar {
-  padding: 15px 10% 15px 10%;
+  padding: 15px 5% 15px 5%;
 }
 
 .masthead {
@@ -155,11 +156,10 @@ form.search::after {
   font-size: 14px;
   display: inline-block;
   padding: 5px;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   border-radius: 5px;
   margin-right: 10px;
   margin-top: 10px;
-  border: 1px solid #d8d8d8;
 
 }
 
@@ -203,18 +203,22 @@ form.search::after {
 }
 
 .icon-link {
+  display: inline-block;
   width: 110px;
   height: 110px;
   text-align: center;
-  border: 1px solid #d8d8d8;
   padding: 10px;
-  background-color: #ffffff;
+  background-color: #f3f3f3;
   float: left;
   margin: 5px;
 }
 
+/* .icon-link:hover {
+  background-color: #009f4d;
+} */
+
 .icon-main {
-  color: #3F3F3F;
+  color: #54585A;
   font-size: 30px;
   padding: 10px;
   margin-bottom: 3px;
@@ -247,11 +251,15 @@ form.search::after {
   font-size: 16px;
 }
 
+.vf-tabs__list {
+  padding: 0px;
+  text-align: center;
+}
+
 .vf-tabs-content h5 {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-
 
 /* SECOND SECTION */
 
@@ -261,7 +269,7 @@ form.search::after {
 }
 
 .popular {
-  padding-right: 60px;
+  /* padding-right: 60px; */
 }
 
 .popular-list {
@@ -280,6 +288,11 @@ form.search::after {
   max-width: 364px;
 }
 
+#seminars-embed {
+  padding: 15px;
+  background-color: #f3f3f3;
+}
+
 #seminars-embed p {
   margin-bottom: 0px;
 }
@@ -296,6 +309,14 @@ form.search::after {
 .seminar-title {
   font-size: 16px;
 }
+
+.seminar-org-name {
+  color: #212529;
+}
+
+/* .rtrt :hover {
+  border: 1px solid  #009f4d;
+} */
 
 
 
