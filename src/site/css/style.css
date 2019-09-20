@@ -283,8 +283,7 @@ form.search::after {
 
 /* THIRD SECTION */
 .seminars {
-  margin-left: 10px;
-  margin-right: 20px;
+  margin-left: 70px;
   max-width: 364px;
 }
 
@@ -314,6 +313,13 @@ form.search::after {
   color: #212529;
 }
 
+.popular ul {
+  border-right: 1px solid #d8d8d8;
+}
+
+.popular ul:last-child {
+  border: none;
+}
 /* .rtrt :hover {
   border: 1px solid  #009f4d;
 } */
