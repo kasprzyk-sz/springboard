@@ -104,10 +104,6 @@ form.search::after {
   padding: 10px 0px;
 }
 
-.timetable p {
-  margin: 0px;
-}
-
 .main-bar {
   margin-bottom: 50px;
   margin-top: 40px;
@@ -277,8 +273,10 @@ form.search::after {
 }
 
 .carousel {
-  margin-top: 40px;
+  margin-left: 60px;
+  margin-top: 24px;
   margin-bottom: 20px;
+
 }
 
 /* THIRD SECTION */
@@ -302,7 +300,7 @@ form.search::after {
 
 .embl-news-container {
   padding-left: 10px;
-  padding-right: 40px;
+  padding-right: 80px;
 }
 
 .seminar-title {
