@@ -21,12 +21,13 @@
     </div>
   </div>
   <div class="services-container">
-    <div id="search-people">
-      <form class="search" method="get" action="http://intranet.embl.de/search_result/index.php">
-        <input type="text" placeholder="Search" name="s_keyword">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
+  <form action="http://intranet.embl.de/search_result/index.php" class="vf-form | vf-search vf-search--inline search-bar" method="get">
+    <div class="vf-form__item | vf-search__item">
+        <label class="vf-form__label vf-sr-only | vf-search__label" for="text">Search</label>
+        <input type="text" id="text" class="vf-form__input | vf-search__input" name="s_keyword">
     </div>
+    <button type="submit" class="vf-search__button | vf-button vf-button--primary"> Search</button>
+</form>
     <div class="quick-links">
     <div class="link-box-1">
       <a class="icon-link vf-link" href="#">

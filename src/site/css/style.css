@@ -43,56 +43,11 @@
 }
 
 /* SEARCH */
+
 .search-bar {
-  margin-top: 2vh;
-  background-color: #ffffff;
+  width: 100%;
 }
 
-#search-people {
-  display: block;
-  width: 85%;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-form.search-people {
-  width: 40%;
-  margin: 1em 0 0 0;
-  text-align: right;
-}
-
-form.search input[type=text] {
-  padding: 8px;
-  font-family: "IBM Plex Sans", sans-serif;
-  color: #333333;
-  border: 3px solid #cccccc;
-  width: 80%;
-}
-
-/* Style the submit button */
-form.search button {
-  width: 15%;
-  margin-left: 1%;
-  padding: 6px;
-  background: #3F3F3F;
-  color: white;
-  font-size: 18px;
-  border: 3px solid #3F3F3F;
-  border-left: none;
-  /* Prevent double borders */
-  cursor: pointer;
-}
-
-form.search button:hover {
-  background: #009f4d;
-}
-
-form.search::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 /*END OF SEARCH*/
 
@@ -100,7 +55,6 @@ form.search::after {
 
 .timetable {
   text-align: center;
-  display: block;
   padding: 10px 0px;
 }
 
@@ -196,6 +150,7 @@ form.search::after {
  
 .services-container {
   padding: 0px 40px 0px 100px;
+  margin: 0 auto;
 }
 
 .icon-link {
@@ -309,6 +264,11 @@ form.search::after {
 
 .seminar-org-name {
   color: #212529;
+}
+
+.seminar-item {
+padding-left: 10px;
+margin-bottom: 22px;
 }
 
 .popular ul {

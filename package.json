@@ -103,6 +103,7 @@
     "@visual-framework/vf-masthead": "^1.0.0-alpha.4",
     "@visual-framework/vf-navigation": "^1.0.0-alpha.4",
     "@visual-framework/vf-news-container": "^1.0.0-alpha.4",
+    "@visual-framework/vf-search": "^1.0.0-alpha.7",
     "@visual-framework/vf-section-header": "^1.0.0-beta.4",
     "@visual-framework/vf-summary": "^1.0.0-beta.4"
   }

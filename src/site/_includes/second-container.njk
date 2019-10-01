@@ -249,12 +249,13 @@
       <h4 class="vf-section-header__heading">Seminars</h4>
       <div id="seminars-embed">
         {%for item in seminars.items%}
+        <div class="seminar-item" style="border-left: solid 6px {{item.color}}">
         <p class="vf-summary__date seminar-org-name">{{item.org_name}}</p>
         <p class="vf-summary__date">{{item.date}} - {{item.room}}</p>
         <p class="vf-summary__date"></p>
         <p class="vf-summary__text seminar-title">{{item.title}}</p>
         <p class="vf-summary__date">{{item.firstname}} {{item.name}}</p>
-        <hr>
+        </div>
         {%endfor%}
         <div class="more-link">
           <a href="#" class="vf-link vf-link--hover">Seminars calendar >></a>
