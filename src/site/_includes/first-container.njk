@@ -1,0 +1,91 @@
+<section class="vf-grid main-bar">
+  <div class="news-container">
+    <h4 class="vf-section-header__heading">INsites</h4>
+    <div class="insites">
+      {% for item in news.items %}
+      <div class="news-image">
+        <img src="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.image }}">
+      </div>
+      <div class="news-text">
+        <p class="vf-summary__date">{{item.date}}</p>
+        <h3 class="vf-summary__title">
+        <a href="https://intranet.embl.de/communication_outreach/internal_news/2019/{{ item.url }}" class="vf-summary__link insites-link">{{ item.title }}</a>
+        </h3>
+        <p class="crop vf-summary__text">{{item.description}}</p>
+        </br>
+      </div>
+      {% endfor %}
+      <div class="more-link">
+        <a href="#" class="vf-link vf-link--hover | see-more">Read all news >></a>
+      </div>
+    </div>
+  </div>
+  <div class="services-container">
+  <form action="http://intranet.embl.de/search_result/index.php" class="vf-form | vf-search vf-search--inline search-bar" method="get">
+    <div class="vf-form__item | vf-search__item">
+        <label class="vf-form__label vf-sr-only | vf-search__label" for="text">Search</label>
+        <input type="text" id="text" class="vf-form__input | vf-search__input" name="s_keyword">
+    </div>
+    <button type="submit" class="vf-search__button | vf-button vf-button--primary vf-button--sm"> Search</button>
+</form>
+    <div class="quick-links">
+    <div class="link-box-1">
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-check icon-main"></i> #}
+        <p class="icon-two-lines">Admin Services</p>
+      </a>      </div>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-check icon-main"></i> #}
+        <p class="icon-two-lines">Room Booking</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-utensils icon-main"></i> #}
+        <p class="icon-two-lines">PPMS Booking</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-book icon-main"></i> #}
+        <p class="icon-one-line">Photolab</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="far fa-file-alt icon-main"></i> #}
+        <p class="icon-two-lines">Canteen Menu</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-info icon-main"></i> #}
+        <p class="icon-one-line">Events</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-hospital icon-main"></i> #}
+        <p class="icon-one-line">Marketplace</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-photo-video icon-main"></i> #}
+        <p class="icon-two-lines">Staff Information</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-briefcase icon-main"></i> #}
+        <p class="icon-one-line">Library</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-baby icon-main"></i> #}
+        <p class="icon-two-lines">SIM Service Request</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-file-invoice icon-main"></i> #}
+        <p class="icon-two-lines">IT Service Request</p>
+      </a>
+      <a class="icon-link vf-link" href="#">
+        {# <i class="fas fa-tools icon-main"></i> #}
+        <p class="icon-two-lines">Service Request</p>
+      </a>
+    </div>
+    <div class="timetable">
+      {# <i class="si fa fa-bus icon-main"></i> #}
+      <p>Bus timetable&nbsp;<span class="badge badge-secondary">Live</span></p>
+      <a href="#" class="bus-number vf-link">Shuttle:<span class="bus-time">16:45</span></a>
+      <a href="#" class="bus-number vf-link">39:<span class="bus-time">17:00</span></a>
+      <a href="#" class="bus-number vf-link">39A:<span class="bus-time">17:05</span></a>
+    </div>
+  </div>
+</section>
+<hr class="vf-divider">

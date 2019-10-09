@@ -11,11 +11,7 @@ module.exports = () => {
         toJSON(response.data, function(err, result) {
 
           // create a path for each item based on Medium's guid URL
-          // result.events.forEach(element => {
-          //     seminar_names['element'] = element
-          // });
           var seminars = [];
-          //create a path for each item based on Medium's guid URL
           result['events']['seminars'][0]['seminar'].forEach(element => {
             var item = {
               'org_name': element.emblOrgName[0],
