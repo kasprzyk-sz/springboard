@@ -48,9 +48,7 @@
   width: 90%;
 }
 
-.vf-search__button {
-  margin: 
-}
+
 
 /*END OF SEARCH*/
 
@@ -59,7 +57,7 @@
 .timetable {
   text-align: center;
   padding: 10px 0px;
-  z-index: 5;
+  margin-top: 20px;
 }
 
 .main-bar {
@@ -120,8 +118,6 @@
 .bus-time {
   display: inline-block;
   padding: 5px;
-  color: white;
-  background-color: #009f4d;
   border-radius: 5px;
   margin-left: 5px;
 }
@@ -164,7 +160,6 @@
   text-align: center;
   padding: 10px;
   background-color: #f3f3f3;
-  float: left;
   margin: 5px;
 }
 
@@ -185,6 +180,10 @@
 }
 
 /* VISUAL FRAMEWORK */
+.vf-search__input {
+padding: 0px;
+}
+
 .vf-list__item {
   margin-left: 10px;
 }
@@ -232,9 +231,8 @@
 }
 
 .carousel {
-  margin-left: 60px;
-  margin-top: 24px;
-  margin-bottom: 20px;
+width: 90%;
+height: auto;
 
 }
 
@@ -295,10 +293,15 @@ margin-bottom: 22px;
 .icon-one-line {
   padding: 30px 0px;
 }
-/* .rtrt :hover {
-  border: 1px solid  #009f4d;
-} */
 
+.menu-links {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.twitter {
+  margin-top: 35px;
+}
 
 
 
