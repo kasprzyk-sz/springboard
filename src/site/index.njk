@@ -2,87 +2,143 @@
 subtitle: No homepage, yet.
 date: 2018-08-22 12:24:50
 layout: layouts/base.njk
-templateEngineOverride: njk, md
+templateEngineOverride: njk
 ---
-
-{% render '@vf-intro', {"vf_intro_phase": "alpha", "vf_intro_heading": siteConfig.siteInformation.title,
-  "vf_intro_lede": siteConfig.siteInformation.short_description,
-  "vf_intro_text": [
-    "☝️ that also means dynamic building of just the CSS and JS you need."
-  ]
-} %}
-
-<section class="embl-grid embl-grid--has-centered-content">
-  <div>
-    <!-- empty -->
+{% include "header.njk" %}
+<div class="wrapper">
+  {% include "first-container.njk" %}
+  {% include "second-container.njk" %}
+  <hr class="vf-divider">
+  <div class="this-week">
+    <h2 class="vf-links__heading">This week at EMBL</h2>
+    <div data-tockify-component="calendar" data-tockify-calendar="emblcalendar"></div>
+    <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js">
+    </script>
   </div>
-  <div class="vf-content">
-  {% markdown %}
-
-  ## Quickstart
-
-  ```
-
-      npm init @visual-framework/vf-eleventy your-new-site-name vf-eleventy   
-
-  ```
-
-  This will install a new [`vf-eleventy`](https://github.com/visual-framework/vf-eleventy/) to a folder named `your-new-site-name`.
-
-  Then follow the onscreen prompts and links below to develop and configure.
-
-  ## Longer install?
-
-  The above too easy or have questions? [Read this guide](https://github.com/visual-framework/vf-eleventy#1-creating-a-new-project-powered-by-vf-eleventy).
-
-  {% endmarkdown %}
-
+  <hr class="vf-divider">
+  {% include "third-container.njk" %}
+  <hr class="vf-divider">
+  <div class="vf-grid menu-links">
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Administration
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Finance and Purchase
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Grants Services
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Health and Safety Office
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Human Resources
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            IT Services
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Leadership
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Strategy and Communications
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Research
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Scientific Services
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Training
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="vf-links link-col">
+      <ul class="vf-links__list | vf-list">
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Alumni Relations
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            EMBL Archive
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            International Relations
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Ombuds Office
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Resource Development
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Science and Society
+          </a>
+        </li>
+        <li class="vf-list__item">
+          <a class="vf-list__link" href="JavaScript:Void(0);">
+            Staff Association
+          </a>
+        </li>
+      </ul>
+    </div>
+            <div class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="../images/TBP19-01_290x144.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/TRC19-01_290x144.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/VZB19-01_290x144.jpg" alt="Third slide">
+            </div>
+          </div>
+        </div>
+        <div class="more-link">
+          <a href="#" class="vf-link vf-link--hover | see-more">Courses and Conferences >></a>
+        </div>
+      </div>
+    
   </div>
-</section>
-
-
-<section class="vf-intro | embl-grid embl-grid--has-centered-content">
-
-<div>
-  <!-- empty -->
 </div>
-<div class="vf-content">
-
-## What you get
-
-- the Eleventy static site generator
-- access to the Visual Framework component system
-
-### Component installation
-
-To add a component you can use npm/Yarn or install it manually.
-
-In either case you'll need to re-run `gulp dev` to ensure the component is fully loaded.
-
-- installation: `yarn add @visual-framework/vf-logo`
-- updating: `yarn upgrade-interactive --latest`
-
-### Manual installation for customisation
-
-1. Download a pattern
-2. Copy it to `./src/components/vf-component-name`
-
-### Add your own local component
-
-You can add a custom VF-compatible component to `./src/components` and use it in
-your site.
-
-- `gulp vf-component`
-
-You'll find a `vf-sample` component there, we've used it below:
-
-<div class="vf-box">
-{% verbatim %}
-Code: {% render "@vf-sample", {text: "with some text"} %}
-{% endverbatim %}
-
-Returns: {% render "@vf-sample", {text: "with some text"} %}
-</div>
-
-</div>
-</section>
